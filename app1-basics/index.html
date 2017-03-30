@@ -1,6 +1,23 @@
-<html>
-	<body>
-	
+<html ng-app='AppOne'>
+	<body ng-controller='AppController'>
+
+		<h1>{{test}}</h1>
+
+		<input ng-model='search'/>
+			<button ng-click='order="name"' type="button" name="button">Filter: Alphabetica</button>
+				<ul ng-repeat='x in arr | orderBy:order| filter:search'>
+					<li>{{x.name}}</li>
+				</ul>
+
+				<div>
+				<ul ng-repeat='x in smurfname'>
+					<li>{{x}}</li>
+				</ul>
+				<ul ng-repeat='x in smurfimg'>
+					<img ng-src="{{x}}" alt="">
+				</ul>
+				</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

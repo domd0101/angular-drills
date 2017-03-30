@@ -1,9 +1,28 @@
-<html ng-app="arrayApp">
+<html ng-app="AppTwo">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body ng-controller="arrayController">
-	
+	<body ng-controller="AppTwoCtrl">
+
+	<header class='head'>
+		<h1>Name: </h1>
+		<h1>Email: </h1>
+		<h1>Phone: </h1>
+	</header>
+
+	<div class='box'>
+			<div class='inner'>
+					<h4 ng-repeat="x in myDataName" class='innerinner'>{{x}}</h4>
+			</div>
+			<div class='inner'>
+					<h4 ng-repeat="y in myDataEmail" class='innerinner'>{{y}}</h4>
+			</div>
+			<div class='inner'>
+					<h4 ng-repeat="v in myDataPhone" class='innerinner'>{{v}}</h4>
+			</div>
+	</div>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

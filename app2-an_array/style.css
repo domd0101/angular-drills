@@ -1,8 +1,27 @@
-.row {
-	background-color: #D3D46A;
+.head{
 	width: 100%;
+	position: fixed;
+	top: 0;
+	border-bottom: 5px solid purple;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: SlateBlue;
 }
-.personData {
-	width: 24%;	
-	display: inline-block;
+.box{
+	margin-top: 7%;
+	display: flex;
+	flex-direction: row;
+}
+.inner{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	color: SlateBlue;
+}
+.innerinner{
+	padding: 5px;
+	border: 2px solid grey;
+	text-align: center;
 }
